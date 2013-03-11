@@ -1,0 +1,207 @@
+<doctype html>
+
+<html>
+
+	<head>
+    <title> SV Horn </title>
+    
+    <!-- Viewport + nicht Skalierbar -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    
+    <!-- Fullscreen Mode -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    
+    <!-- Aussehen Status Bar -->
+   	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    
+    <!-- Icons für Homescreen -->
+    <link rel="apple-touch-icon" href="assets/images/icon.png" />
+	
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+ 
+
+	<link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+    
+    <script type="text/javascript" src="assets/js/script.js"></script>
+    <script type="text/javascript" src="assets/js/modernizr.js"></script>
+    <script type="text/javascript" src="assets/js/jquery-1.9.1.min.js"></script>
+    
+    </head>
+
+<body onLoad="show_news();show_video();show_fotoalbum();">
+
+
+<!--- SECTION INDEX --->
+<section id="site_home" class="section">
+
+<section class="header">
+<h1>SV Horn :: BE PART OF IT</h1>
+<div class="reload-container"><a href="javascript:window.location.href=window.location.href"><img class="reload" src="assets/images/reload.png"/></a></div>
+</section>
+
+<section class="content">
+
+<section  class="container" id="news">
+<h2>News</h2>
+
+<div id="laden" style="color:#fff;"></div>
+
+<div id="news_content">
+<ul id="news_list_home">
+</ul>
+</div>
+<div style="clear:right";></div>
+
+</section>
+
+<section id="second-bar">
+
+<section class="container" id="tabelle">
+<a id="goto_statistik"><div  class="morelink">+</div></a>
+<h2>Statistik</h2>
+<iframe class="tabelle" src="http://www.fussballoesterreich.at/datenservice/vereinsdaten/xhtml/tabelle/BL%202012~2013/2461/KM%20Profis?key=05952F2B0&amp;css=http://svhornapp.dmedia.at/assets/css/datenservice_home.css" border="0" frameborder="no"></iframe>
+</section>
+
+<section class="container" id="youtube-video">
+<a href="javascript:show_videos_site();"><div  class="morelink">+</div></a>
+<h2>SV Horn TV</h2>
+<div id="videoladen"></div>
+</section>
+
+<section class="container" id="liveticker">
+<a href="javascript:show_liveticker_site();"><div class="morelink">+</div></a>
+<h2>Liveticker</h2>
+<p>
+SV Horn - Austria Lustenau<br/>
+Freitag 8. März. 20.30h<br/>
+Waldviertler Volksbank Arena<br/><br/></p>
+
+</section>
+
+</section>
+
+
+<section id="sidebar" class="container">
+<a href="javascript:show_foto_site();"><div class="morelink">+</div></a>
+<h2>Fotos</h2>
+<div id="sidebar_content">
+<div id="fotoalbumladen"></div>
+<div id="fotoalbum">
+</div>
+</div>
+<div id="albumclear"></div>
+</section>
+
+</section>
+
+
+
+<section id="footer">
+</section>
+
+<section id="footer-navi">
+
+
+<a href="javascript:show_news_site();">News</a>
+<a href="javascript:show_statistic_site();">Statistik</a>
+<a href="javascript:show_videos_site();">Video</a>
+<a href="javascript:show_liveticker_site();">Liveticker</a>
+<a href="javascript:show_foto_site();">Fotos</a>
+
+
+</section>
+</section>
+
+<!--- ENDE SECTION INDEX --->
+
+<!--- SECTION NEWS --->
+<section id="site_news" class="section" class="site_news">
+
+<section class="header">
+<h1>SV Horn :: BE PART OF IT</h1>
+<div class="reload-container"><a href="javascript:show_news_single(ID);"><img class="reload" src="assets/images/reload.png"/></a></div>
+</section>
+
+
+
+<section class="content">
+
+
+<section  class="container" id="news">
+<h2>News</h2>
+
+<div id="laden" style="color:#fff;"></div>
+
+<div id="news_content_single">
+<ul id="news_list_news">
+</ul>
+<div style="clear:right";></div>
+</div>
+
+</section>
+
+</section>
+
+<section class="container" id="news_single">
+<a href="javascript:show_news();"><h2>zurück</h2></a>
+<div id="news_single_laden" style="color:#fff;"></div>
+<div id="newssingle">
+</div>
+</section>
+
+<section id="footer">
+</section>
+
+<section id="footer-navi">
+
+
+<a href="javascript:show_news_site();">News</a>
+<a href="javascript:show_statistic_site();">Statistik</a>
+<a href="javascript:show_videos_site();">Video</a>
+<a href="javascript:show_liveticker_site();">Liveticker</a>
+<a href="javascript:show_foto_site();">Fotos</a>
+
+
+</section>
+</section>
+
+<!--- ENDE SECTION NEWS --->
+
+
+
+<script type="text/javascript">
+
+
+
+/*Event Listener*/
+function initEvents(){
+
+	if(Modernizr.touch){
+
+		localStorage.myEvent = "touchend";
+
+	}else{
+
+		localStorage.myEvent = "click";	
+
+	}
+
+	var d = document;
+	var myEvent = localStorage.myEvent;
+	
+d.getElementById('goto_statistik').addEventListener(myEvent, function(){ window.location='statistik.html' }, false);
+
+}
+
+initEvents();
+
+
+</script>
+
+
+</body>
+
+
+
+
+</html>

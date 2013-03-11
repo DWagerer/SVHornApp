@@ -1,0 +1,144 @@
+body {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	padding: 0; margin: 0; 
+}
+
+.fvTabelle {
+	width: 100%;
+	border: 0 none; 
+}
+
+.zeile td {
+	font-size: 11px;
+}
+
+
+.ueberschrift_tabelle {
+	font-size: 13px;
+	background-color: #eeeeee;
+	font-weight: bold;
+	text-align: center;
+}
+
+.ueberschrift_rang, 
+.ueberschrift_mannschaft, 
+.ueberschrift_spiele, 
+.ueberschrift_siege, 
+.ueberschrift_unentschieden, 
+.ueberschrift_niederlagen, 
+.ueberschrift_torverhaeltnis, 
+.ueberschrift_tordifferenz, 
+.ueberschrift_punkte {
+	text-align: center;
+	font-weight: bold;
+	font-size: 11px;
+	background-color: #ffffff;
+}
+
+.ueberschrift_mannschaft {
+	text-align: left;
+	padding-left: 5px;
+}
+
+.rang, 
+.spiele, 
+.siege, 
+.unentschieden, 
+.niederlagen, 
+.torverhaeltnis, 
+.tordifferenz, 
+.punkte {
+	text-align: center;
+}
+
+.spiele, 
+.siege, 
+.unentschieden, 
+.niederlagen, 
+.torverhaeltnis, 
+.tordifferenz, 
+.punkte {
+	width: 10%;
+}
+
+.rang { 
+	width: 5%; 
+}
+
+.mannschaft {
+	text-align: left;
+	padding-left: 5px;
+}
+
+.siege, .unentschieden,.niederlagen,  .torverhaeltnis {display:none;}
+
+
+/* ------- */
+
+.gerade {
+	color: #fff;
+	background-color: #2d4c81;
+}
+.gerade A,
+.gerade A:visited, 
+.gerade A:hover {
+	color: #717172;
+	background-color: #ffffff;
+	text-decoration: none;
+}
+.gerade A:hover{
+	color: #000000;
+}
+
+/* ------- */
+
+.ungerade {
+	color: #fff;
+	background-color: #395788;
+	padding: 1px;
+}
+.ungerade A, 
+.ungerade A:visited, 
+.ungerade A:hover {
+	color: #fff;
+	background-color: #2d4c81;
+	text-decoration: none;
+}
+.ungerade A:hover{
+	color: #000000;
+}
+
+/* ------- */
+
+.verein2461 {background-color:#c50a0a; color:#fff;}
+
+.disclaimer {
+	padding-top: 20px;
+	font-size: 9px;
+	color: #a0a0a0;
+	text-align: center;
+	display:none;
+}
+.disclaimer A {
+	font-size: 8px;
+	color: #606060;
+	text-decoration: underline;
+}
+
+
+.ueberschrift_tabelle,
+.ueberschrift_rang,
+.ueberschrift_mannschaft,
+.ueberschrift_spiele,
+ .ueberschrift_siege,
+.ueberschrift_unentschieden,
+ .ueberschrift_niederlagen,
+.ueberschrift_torverhaeltnis,
+ .ueberschrift_tordifferenz,
+ .ueberschrift_punkte {
+	display: none;
+}
+
+.rang {font-weight:bold;}
+.punkte {font-weight:bold;}

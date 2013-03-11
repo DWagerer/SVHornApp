@@ -1,0 +1,126 @@
+<doctype html>
+
+<html>
+
+	<head>
+    <title> SV Horn </title>
+    
+    <!-- Viewport + nicht Skalierbar -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    
+    <!-- Fullscreen Mode -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    
+    <!-- Aussehen Status Bar -->
+   	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    
+    <!-- Icons für Homescreen -->
+    <link rel="apple-touch-icon" href="assets/images/icon.png" />
+	
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+    
+    
+	<script type="text/javascript" src="assets/js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="assets/js/script.js"></script>
+    <script type="text/javascript" src="assets/js/modernizr.js"></script>
+    
+    
+    </head>
+
+<body onLoad="show_news();show_video();show_fotoalbum();">
+
+
+<!--- SECTION INDEX --->
+<section id="site_statistik" class="section">
+
+<section class="header">
+<h1>SV Horn :: BE PART OF IT</h1>
+<div class="reload-container"><a href="javascript:window.location.href=window.location.href"><img class="reload" src="assets/images/reload.png"/></a></div>
+</section>
+
+
+<section class="content">
+<a id="goto_home" >back</a>
+
+
+<section id="second-bar">
+
+<section class="container">
+<h2>Tabelle</h2>
+<iframe width="100%" height="280px" src="http://www.fussballoesterreich.at/datenservice/vereinsdaten/xhtml/tabelle/BL%202012~2013/2461/KM%20Profis?key=05952F2B0&amp;css=http://svhornapp.dmedia.at/assets/css/datenservice_site.css" border="0" frameborder="no"></iframe>
+</section>
+
+<section class="container">
+<h2>Spiele</h2>
+<iframe width="100%" height="280px" src="http://www.fussballoesterreich.at/datenservice/vereinsdaten/xhtml/spielplan/BL%202012~2013/2461/KM%20Profis?key=05952F2B0&amp;css=http://svhornapp.dmedia.at/assets/css/datenservice_site.css" border="0" frameborder="no"></iframe>
+</section>
+
+
+
+
+</section>
+
+
+
+
+
+<section id="footer">
+</section>
+
+<section id="footer-navi">
+
+
+<a href="javascript:show_news_site();">News</a>
+<a href="javascript:show_statistic_site();">Statistik</a>
+<a href="javascript:show_videos_site();">Video</a>
+<a href="javascript:show_liveticker_site();">Liveticker</a>
+<a href="javascript:show_foto_site();">Fotos</a>
+
+
+</section>
+</section>
+
+<!--- ENDE SECTION INDEX --->
+
+
+
+
+
+<script type="text/javascript">
+
+
+
+/*Event Listener*/
+function initEvents(){
+
+	if(Modernizr.touch){
+
+		localStorage.myEvent = "touchend";
+
+	}else{
+
+		localStorage.myEvent = "click";	
+
+	}
+
+	var d = document;
+	var myEvent = localStorage.myEvent;
+	
+d.getElementById('goto_home').addEventListener(myEvent, function(){ window.location='index.html' }, false);
+
+}
+
+initEvents();
+
+
+</script>
+
+
+</body>
+
+
+
+
+</html>
