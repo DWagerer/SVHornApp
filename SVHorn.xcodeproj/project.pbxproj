@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		964C03D916EF307A0045DDFA /* icon_57.png in Resources */ = {isa = PBXBuildFile; fileRef = 964C03D816EF307A0045DDFA /* icon_57.png */; };
+		964C03DB16EF30950045DDFA /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 964C03DA16EF30950045DDFA /* icon.png */; };
+		964C03DD16EF30BC0045DDFA /* icon_retina.png in Resources */ = {isa = PBXBuildFile; fileRef = 964C03DC16EF30BC0045DDFA /* icon_retina.png */; };
 		969C49CA16EE7B4D00231878 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 969C49C916EE7B4D00231878 /* Foundation.framework */; };
 		969C49CC16EE7B4D00231878 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 969C49CB16EE7B4D00231878 /* UIKit.framework */; };
 		969C49CE16EE7B4D00231878 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 969C49CD16EE7B4D00231878 /* CoreGraphics.framework */; };
@@ -42,6 +45,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		964C03D816EF307A0045DDFA /* icon_57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_57.png; sourceTree = "<group>"; };
+		964C03DA16EF30950045DDFA /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		964C03DC16EF30BC0045DDFA /* icon_retina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_retina.png; sourceTree = "<group>"; };
 		969C49C616EE7B4D00231878 /* SVHorn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SVHorn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		969C49C916EE7B4D00231878 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		969C49CB16EE7B4D00231878 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -118,6 +124,9 @@
 		969C49BA16EE7B4D00231878 = {
 			isa = PBXGroup;
 			children = (
+				964C03DC16EF30BC0045DDFA /* icon_retina.png */,
+				964C03DA16EF30950045DDFA /* icon.png */,
+				964C03D816EF307A0045DDFA /* icon_57.png */,
 				969C4A2716EE7EA000231878 /* Default-568h@2x.png */,
 				969C4A2516EE7C6200231878 /* www */,
 				969C49E316EE7B4D00231878 /* SVHorn */,
@@ -336,6 +345,9 @@
 				969C4A1716EE7B4D00231878 /* MainViewController.xib in Resources */,
 				969C4A2616EE7C6200231878 /* www in Resources */,
 				969C4A2816EE7EA000231878 /* Default-568h@2x.png in Resources */,
+				964C03D916EF307A0045DDFA /* icon_57.png in Resources */,
+				964C03DB16EF30950045DDFA /* icon.png in Resources */,
+				964C03DD16EF30BC0045DDFA /* icon_retina.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -446,6 +458,7 @@
 					"$(inherited)",
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_THUMB_SUPPORT = NO;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
@@ -474,6 +487,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_THUMB_SUPPORT = NO;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
@@ -497,6 +511,7 @@
 					"DEBUG=1,",
 					"CORDOVA_FRAMEWORK=1",
 				);
+				GCC_THUMB_SUPPORT = NO;
 				INFOPLIST_FILE = "SVHorn/SVHorn-Info.plist";
 				OTHER_LDFLAGS = (
 					"-weak_framework",
@@ -526,6 +541,7 @@
 					"NDEBUG=1,",
 					"CORDOVA_FRAMEWORK=1",
 				);
+				GCC_THUMB_SUPPORT = NO;
 				INFOPLIST_FILE = "SVHorn/SVHorn-Info.plist";
 				OTHER_LDFLAGS = (
 					"-weak_framework",
@@ -562,6 +578,7 @@
 				969C4A1F16EE7B4D00231878 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
