@@ -21,7 +21,7 @@ function show_news()
 
     var xmlhttp = new XMLHttpRequest();
        
-    xmlhttp.open("GET", 'assets/database/newsabfrage.php', true);
+    xmlhttp.open("GET", 'http://svhornapp.dmedia.at/assets/database/newsabfrage.php', true);
     xmlhttp.send(null);
     xmlhttp.onreadystatechange = function() 
 	{
@@ -100,7 +100,7 @@ $('#site_home').show();
 function show_news_single(ID_uebergabe) {
 	
 ID = ID_uebergabe;
-var phpFile_newssingle = 'assets/database/newsabfrage_single.php?ID=';
+var phpFile_newssingle = 'http://svhornapp.dmedia.at/assets/database/newsabfrage_single.php?ID=';
 
 var xmlhttp_newssingle = new XMLHttpRequest();
 	
@@ -170,7 +170,7 @@ function show_video()
 
     var xmlhttp_video = new XMLHttpRequest();
        
-    xmlhttp_video.open("GET", 'assets/database/videoabfrage.php', true);
+    xmlhttp_video.open("GET", 'http://svhornapp.dmedia.at/assets/database/videoabfrage.php', true);
     xmlhttp_video.send(null);
     xmlhttp_video.onreadystatechange = function() 
 	{
@@ -214,7 +214,7 @@ function show_fotoalbum()
 
     var xmlhttp_fotoalbum = new XMLHttpRequest();
        
-    xmlhttp_fotoalbum.open("GET", 'assets/database/fotoalbumabfrage.php', true);
+    xmlhttp_fotoalbum.open("GET", 'http://svhornapp.dmedia.at/assets/database/fotoalbumabfrage.php', true);
     xmlhttp_fotoalbum.send(null);
     xmlhttp_fotoalbum.onreadystatechange = function() 
 	{
